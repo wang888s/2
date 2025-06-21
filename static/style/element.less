@@ -1,0 +1,187 @@
+.el-form-item__error {
+    font-size: 14px;
+}
+
+.el-dropdown-menu__item:focus {
+    background-color: transparent;
+}
+
+.el-select-dropdown {
+    background-color: rgba(10, 22, 57, 0.75);
+    border-radius: 3px;
+    border: solid 2px #144674;
+}
+
+.el-select-dropdown__item {
+    color: #fff;
+
+    &:hover {
+        color: #fff;
+        background-color: rgba(8, 55, 120, 1);
+    }
+
+    &.hover, &.selected {
+        color: #fff;
+        background-color: rgba(8, 55, 120, 1);
+    }
+}
+
+.el-popper[x-placement^=left] {
+    background: #0A1639;
+    border: 2px solid #144674;
+}
+
+.el-popper[x-placement^=right] {
+    background: #0A1639;
+    border: 2px solid #144674;
+}
+
+.el-popper[x-placement^=left] .popper__arrow::after {
+    border-left-color: rgba(10, 22, 57, 0.95);
+}
+
+.el-popper[x-placement^=left] .popper__arrow {
+    border-left-color: #144674;
+
+}
+
+.el-picker-panel {
+    background-color: rgba(8, 28, 130, 1);
+    color: #fff;
+    border-color: rgba(22, 100, 255, 1);
+
+    .el-date-picker__header {
+        button {
+            color: #fff;
+        }
+    }
+
+    .el-year-table {
+        .cell {
+            color: #fff;
+        }
+    }
+
+    .el-month-table {
+        .cell {
+            color: #fff;
+        }
+    }
+}
+
+.el-date-table th {
+    color: #fff;
+}
+
+.el-date-picker__header-label {
+    color: #fff;
+}
+
+.el-select-dropdown {
+    background-color: rgba(8, 55, 120, 0.76);
+    border-radius: 3px;
+    border: solid 2px rgba(60, 188, 255, 0.28);
+    .popper__arrow::after {
+        border-bottom-color: rgba(8, 55, 120, 0.76)!important;
+    }
+
+    .popper__arrow {
+        border-bottom-color: rgba(8, 55, 120, 0.76)!important;
+    }
+}
+
+.el-popper[x-placement^=top] .popper__arrow::after {
+    border-top-color: rgba(10, 22, 57, 0.75);
+}
+
+.el-popper[x-placement^=top] .popper__arrow {
+    border-top-color: rgba(22, 100, 255, 1);
+}
+
+.el-popper[x-placement^=bottom] .popper__arrow::after {
+    border-bottom-color: rgba(10, 22, 57, 0.95);
+}
+
+.el-popper[x-placement^=bottom] .popper__arrow {
+    border-bottom-color: #144674;
+}
+
+.el-popper[x-placement^=top] .popper__arrow::after {
+    border-top-color: rgba(8, 55, 120, 0.76);
+}
+
+.el-popper[x-placement^=top] .popper__arrow {
+    border-top-color: #144674;
+}
+
+.el-popper[x-placement^=right] .popper__arrow::after {
+    border-right-color: #0A1639;
+}
+
+.el-popper[x-placement^=right] .popper__arrow {
+    border-right-color: #144674;
+}
+
+/*第一种css方法：使用css将小圆圈变透明然后覆盖在整个文字上方，点击文字的时候其实是在点击小圈圈。*/
+/*以下样式将单选框隐藏，并绝对定位与文字内容一样大小，这样点击时可以点击整行文字*/
+ .el-cascader-panel .el-radio{
+     position:absolute;
+     z-index:10;
+     padding:0 10px;
+     width:132px;
+     height:34px;
+     line-height:34px;
+ }
+.el-cascader-panel .el-radio__input{
+    visibility:hidden;
+}
+.el-cascader-panel .el-input-node__postfix{
+    top:10px;
+}
+
+.el-cascader {
+    .el-input {
+        input {
+            background: transparent;
+            border: none;
+            color: #3CBCFF;
+        }
+    }
+}
+
+.el-cascader__dropdown {
+    background: rgba(8, 28, 130, 1);
+    border: 2px solid #144674;
+    .el-cascader-menu {
+        color: #fff;
+    }
+}
+
+.el-cascader-node:not(.is-disabled):focus, .el-cascader-node:not(.is-disabled):hover {
+    background-color: rgba(7, 9, 70, 1);
+    color: #fff;
+}
+
+.el-popover {
+    background-color: rgba(10, 22, 57, 0.75);
+    border: solid 2px #144674;
+    .el-popover__title {
+        color: #fff;
+    }
+}
+
+.el-select {
+    .el-input__inner {
+        background-color: rgba(10, 22, 57, 0.75);
+        border: solid 2px #144674;
+    }
+}
+
+.el-tag.el-tag--info {
+    background-color: transparent;
+    color: #fff;
+    border-color: transparent;
+    /* border-color: #e9e9eb; */
+    /* color: #909399; */
+    font-size: 14px;
+}
