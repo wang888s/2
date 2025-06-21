@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 设置IE渲染方式默认为最高 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!-- <title>浙江省生态产品数字化平台</title> -->
+    <script src="<%= BASE_URL %>echarts.js"></script>
+    <script type="text/javascript"
+        src="http://api.tianditu.gov.cn/api?v=4.0&tk=fa6763c0ee279a2a615a252848f5b54f"></script>
+    <style>
+        html,
+        body,
+        #map {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            height: 0;
+        }
+
+        #testbutton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 1);
+            border-radius: 4px;
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 8px;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+            background: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <noscript>
+        <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+                Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+</body>
+
+</html>
